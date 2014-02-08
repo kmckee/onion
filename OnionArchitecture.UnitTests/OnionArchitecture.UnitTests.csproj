@@ -51,6 +51,20 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OnionArchitecture.Core\OnionArchitecture.Core.csproj">
+      <Project>{0e1bafaf-382a-4743-ac27-14adfb57db37}</Project>
+      <Name>OnionArchitecture.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnionArchitecture.Infrastructure\OnionArchitecture.Infrastructure.csproj">
+      <Project>{03ff4f7a-08d1-4105-8662-285e583dcf9a}</Project>
+      <Name>OnionArchitecture.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnionArchitecture.UI.Web\OnionArchitecture.UI.Web.csproj">
+      <Project>{a7c1eff5-5696-46c1-8c8e-6f2960c01583}</Project>
+      <Name>OnionArchitecture.UI.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

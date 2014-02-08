@@ -1,0 +1,5 @@
+C:\Projects\OnionArchitecture\OnionArchitecture.Core\bin\Debug\OnionArchitecture.Core.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.Core\bin\Debug\OnionArchitecture.Core.pdb
+C:\Projects\OnionArchitecture\OnionArchitecture.Core\obj\Debug\OnionArchitecture.Core.csprojResolveAssemblyReference.cache
+C:\Projects\OnionArchitecture\OnionArchitecture.Core\obj\Debug\OnionArchitecture.Core.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.Core\obj\Debug\OnionArchitecture.Core.pdb

@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5763E470
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.UnitTests", "OnionArchitecture.UnitTests\OnionArchitecture.UnitTests.csproj", "{66B7C9B9-114F-497B-BF51-527460EFFEE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.IOC", "OnionArchitecture.IOC\OnionArchitecture.IOC.csproj", "{A5B14DB8-3E3F-42E4-B4BE-A222DE689116}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{66B7C9B9-114F-497B-BF51-527460EFFEE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66B7C9B9-114F-497B-BF51-527460EFFEE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66B7C9B9-114F-497B-BF51-527460EFFEE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B14DB8-3E3F-42E4-B4BE-A222DE689116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B14DB8-3E3F-42E4-B4BE-A222DE689116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B14DB8-3E3F-42E4-B4BE-A222DE689116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B14DB8-3E3F-42E4-B4BE-A222DE689116}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

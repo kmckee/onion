@@ -1,3 +1,6 @@
+using OnionArchitecture.Core.Interfaces;
+using OnionArchitecture.IOC;
+
 [assembly: WebActivator.PreApplicationStartMethod(typeof(OnionArchitecture.UI.Web.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(OnionArchitecture.UI.Web.App_Start.NinjectWebCommon), "Stop")]
 
@@ -39,7 +42,7 @@ namespace OnionArchitecture.UI.Web.App_Start
         /// <returns>The created kernel.</returns>
         private static IKernel CreateKernel()
         {
-            var kernel = new StandardKernel();
+            var kernel = new StandardKernel(new OnionModule());
             kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
             kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
             
@@ -53,6 +56,7 @@ namespace OnionArchitecture.UI.Web.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            //kernel.Bind<IToDoWriter>().To<ToDoRepository>();
         }        
     }
 }

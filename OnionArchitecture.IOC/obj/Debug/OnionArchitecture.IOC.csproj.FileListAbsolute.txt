@@ -1,0 +1,12 @@
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\bin\Debug\OnionArchitecture.IOC.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\bin\Debug\OnionArchitecture.IOC.pdb
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\bin\Debug\Ninject.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\bin\Debug\OnionArchitecture.Core.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\bin\Debug\OnionArchitecture.Infrastructure.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\bin\Debug\OnionArchitecture.Core.pdb
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\bin\Debug\OnionArchitecture.Infrastructure.pdb
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\bin\Debug\Ninject.pdb
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\bin\Debug\Ninject.xml
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\obj\Debug\OnionArchitecture.IOC.csprojResolveAssemblyReference.cache
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\obj\Debug\OnionArchitecture.IOC.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.IOC\obj\Debug\OnionArchitecture.IOC.pdb

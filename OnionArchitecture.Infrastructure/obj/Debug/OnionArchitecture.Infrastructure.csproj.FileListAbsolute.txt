@@ -1,0 +1,12 @@
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\bin\Debug\OnionArchitecture.Infrastructure.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\bin\Debug\OnionArchitecture.Infrastructure.pdb
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\bin\Debug\OnionArchitecture.Core.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\bin\Debug\OnionArchitecture.Core.pdb
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\obj\Debug\OnionArchitecture.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\obj\Debug\OnionArchitecture.Infrastructure.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\obj\Debug\OnionArchitecture.Infrastructure.pdb
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\bin\Debug\OnionArchitecture.Infrastructure.dll.config
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\bin\Debug\EntityFramework.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\bin\Debug\EntityFramework.xml
+C:\Projects\OnionArchitecture\OnionArchitecture.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml

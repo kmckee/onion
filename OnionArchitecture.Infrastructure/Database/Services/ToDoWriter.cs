@@ -17,12 +17,17 @@ namespace OnionArchitecture.Infrastructure.Database.Services
 
         public void Save(ToDo todo)
         {
-            var dto = new ToDoDto
+            var dto = MapToDto(todo);
+            _toDoRepository.Save(dto);
+        }
+
+        private static ToDoDto MapToDto(ToDo todo)
+        {
+            return new ToDoDto
             {
                 Id = todo.Id,
                 Description = todo.Description
             };
-            _toDoRepository.Save(dto);
         }
     }
 }

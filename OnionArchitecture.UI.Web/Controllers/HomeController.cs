@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using OnionArchitecture.Core.Interfaces;
+using OnionArchitecture.Core.Models;
 
 namespace OnionArchitecture.UI.Web.Controllers
 {
@@ -23,9 +24,15 @@ namespace OnionArchitecture.UI.Web.Controllers
             return View();
         }
 
-        public ActionResult Add(string description)
+        public ActionResult Create()
         {
-            throw new NotImplementedException();
+            return View();
+        }
+
+        public ActionResult Create(ToDo toDo)
+        {
+            _toDoWriter.Save(toDo);
+            return View();
         }
     }
 }

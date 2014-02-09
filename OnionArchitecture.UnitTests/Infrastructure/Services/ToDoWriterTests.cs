@@ -15,33 +15,36 @@ namespace OnionArchitecture.UnitTests.Infrastructure.Services
     [TestFixture]
     public class ToDoWriterTests
     {
+        private IToDoRepository _toDoRepository;
+        private ToDoWriter _writer;
 
-        [Test]
-        public void Save_persists_the_description()
+        [SetUp]
+        public void SetUp()
         {
-            var toDoRepository = Substitute.For<IToDoRepository>();
-            var writer = new ToDoWriter(toDoRepository);
-
-            var expectedDescription = "All The Things";
-            var toDo = new ToDo() { Description = expectedDescription };
-            
-            writer.Save(toDo);
-
-            toDoRepository.Received().Save(Arg.Is<ToDoDto>(t => t.Description == expectedDescription));
+            _toDoRepository = Substitute.For<IToDoRepository>();
+            _writer = new ToDoWriter(_toDoRepository);
         }
 
         [Test]
         public void Save_persists_the_id()
         {
-            var toDoRepository = Substitute.For<IToDoRepository>();
-            var writer = new ToDoWriter(toDoRepository);
-
             var expectedId = 3;
             var toDo = new ToDo() { Id = expectedId };
 
-            writer.Save(toDo);
+            _writer.Save(toDo);
 
-            toDoRepository.Received().Save(Arg.Is<ToDoDto>(t => t.Id == expectedId));
+            _toDoRepository.Received().Save(Arg.Is<ToDoDto>(t => t.Id == expectedId));
+        }
+
+        [Test]
+        public void Save_persists_the_description()
+        {
+            var expectedDescription = "All The Things";
+            var toDo = new ToDo() { Description = expectedDescription };
+            
+            _writer.Save(toDo);
+
+            _toDoRepository.Received().Save(Arg.Is<ToDoDto>(t => t.Description == expectedDescription));
         }
     }
 }

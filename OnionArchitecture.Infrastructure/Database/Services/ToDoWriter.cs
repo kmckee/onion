@@ -10,17 +10,17 @@ namespace OnionArchitecture.Infrastructure.Database.Services
     // The interface, however, is defined in the Core assembly.
     public class ToDoWriter : IToDoWriter
     {
-        private readonly IToDoRepository _toDoRepository;
+        private readonly IToDoDtoRepository _toDoDtoRepository;
 
-        public ToDoWriter(IToDoRepository toDoRepository)
+        public ToDoWriter(IToDoDtoRepository toDoDtoRepository)
         {
-            _toDoRepository = toDoRepository;
+            _toDoDtoRepository = toDoDtoRepository;
         }
 
         public void Save(ToDo todo)
         {
             var dto = MapToDto(todo);
-            _toDoRepository.Save(dto);
+            _toDoDtoRepository.Save(dto);
         }
 
         private static ToDoDto MapToDto(ToDo todo)

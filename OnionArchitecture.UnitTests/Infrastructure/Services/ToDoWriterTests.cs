@@ -15,14 +15,14 @@ namespace OnionArchitecture.UnitTests.Infrastructure.Services
     [TestFixture]
     public class ToDoWriterTests
     {
-        private IToDoRepository _toDoRepository;
+        private IToDoDtoRepository _toDoDtoRepository;
         private ToDoWriter _writer;
 
         [SetUp]
         public void SetUp()
         {
-            _toDoRepository = Substitute.For<IToDoRepository>();
-            _writer = new ToDoWriter(_toDoRepository);
+            _toDoDtoRepository = Substitute.For<IToDoDtoRepository>();
+            _writer = new ToDoWriter(_toDoDtoRepository);
         }
 
         [Test]
@@ -33,7 +33,7 @@ namespace OnionArchitecture.UnitTests.Infrastructure.Services
 
             _writer.Save(toDo);
 
-            _toDoRepository.Received().Save(Arg.Is<ToDoDto>(t => t.Id == expectedId));
+            _toDoDtoRepository.Received().Save(Arg.Is<ToDoDto>(t => t.Id == expectedId));
         }
 
         [Test]
@@ -44,7 +44,7 @@ namespace OnionArchitecture.UnitTests.Infrastructure.Services
             
             _writer.Save(toDo);
 
-            _toDoRepository.Received().Save(Arg.Is<ToDoDto>(t => t.Description == expectedDescription));
+            _toDoDtoRepository.Received().Save(Arg.Is<ToDoDto>(t => t.Description == expectedDescription));
         }
     }
 }

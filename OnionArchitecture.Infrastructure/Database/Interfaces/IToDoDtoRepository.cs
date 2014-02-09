@@ -8,7 +8,7 @@ using OnionArchitecture.Infrastructure.Database.Dtos;
 
 namespace OnionArchitecture.Infrastructure.Database.Interfaces
 {
-    public interface IToDoRepository
+    public interface IToDoDtoRepository
     {
         void Save(ToDoDto toDo);
     }

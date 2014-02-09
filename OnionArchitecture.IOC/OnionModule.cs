@@ -22,7 +22,8 @@ namespace OnionArchitecture.IOC
         public override void Load()
         {
             Bind<IToDoWriter>().To<ToDoWriter>();
-            Bind<IToDoRepository>().To<ToDoRepository>();
+            Bind<IToDoDtoRepository>().To<ToDoDtoRepository>();
+            Bind<EfDbContext>().ToSelf();
         }
     }
 }

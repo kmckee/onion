@@ -9,11 +9,19 @@ using OnionArchitecture.Infrastructure.Database.Interfaces;
 
 namespace OnionArchitecture.Infrastructure.Database.Repositories
 {
-    public class ToDoRepository : IToDoRepository
+    public class ToDoDtoRepository : IToDoDtoRepository
     {
+        private readonly EfDbContext _dbContext;
+
+        public ToDoDtoRepository(EfDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         public void Save(ToDoDto toDo)
         {
-            Debug.WriteLine(toDo.ToString());
+            _dbContext.ToDos.Add(toDo);
+            _dbContext.SaveChanges();
         }
     }
 }

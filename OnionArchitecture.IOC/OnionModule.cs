@@ -7,6 +7,8 @@ using Ninject;
 using Ninject.Modules;
 using OnionArchitecture.Core.Interfaces;
 using OnionArchitecture.Infrastructure;
+using OnionArchitecture.Infrastructure.Database;
+using OnionArchitecture.Infrastructure.Database.Services;
 
 namespace OnionArchitecture.IOC
 {
@@ -14,7 +16,7 @@ namespace OnionArchitecture.IOC
     {
         public override void Load()
         {
-            Bind<IToDoWriter>().To<ToDoRepository>();
+            Bind<IToDoWriter>().To<ToDoWriter>();
         }
     }
 }

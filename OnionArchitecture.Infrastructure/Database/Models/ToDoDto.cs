@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace OnionArchitecture.Core.Models
+namespace OnionArchitecture.Infrastructure.Database.Models
 {
-    public class ToDo
+    public class ToDoDto
     {
         public long Id { get; set; }
         public string Description { get; set; }

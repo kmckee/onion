@@ -30,3 +30,7 @@ C:\Projects\OnionArchitecture\OnionArchitecture.UnitTests\bin\Debug\System.Web.H
 C:\Projects\OnionArchitecture\OnionArchitecture.UnitTests\bin\Debug\System.Web.Http.WebHost.xml
 C:\Projects\OnionArchitecture\OnionArchitecture.UnitTests\bin\Debug\System.Net.Http.Formatting.xml
 C:\Projects\OnionArchitecture\OnionArchitecture.UnitTests\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\OnionArchitecture\OnionArchitecture.UnitTests\bin\Debug\NSubstitute.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.UnitTests\bin\Debug\OnionArchitecture.IOC.dll
+C:\Projects\OnionArchitecture\OnionArchitecture.UnitTests\bin\Debug\NSubstitute.xml
+C:\Projects\OnionArchitecture\OnionArchitecture.UnitTests\bin\Debug\OnionArchitecture.IOC.pdb

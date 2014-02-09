@@ -1,8 +1,8 @@
 ﻿using System;
 using OnionArchitecture.Core.Interfaces;
 using OnionArchitecture.Core.Models;
+using OnionArchitecture.Infrastructure.Database.Dtos;
 using OnionArchitecture.Infrastructure.Database.Interfaces;
-using OnionArchitecture.Infrastructure.Database.Models;
 
 namespace OnionArchitecture.Infrastructure.Database.Services
 {

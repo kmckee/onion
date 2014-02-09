@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using NSubstitute;
 using NUnit.Framework;
 using OnionArchitecture.Core.Models;
+using OnionArchitecture.Infrastructure.Database.Dtos;
 using OnionArchitecture.Infrastructure.Database.Interfaces;
-using OnionArchitecture.Infrastructure.Database.Models;
 using OnionArchitecture.Infrastructure.Database.Services;
 
 namespace OnionArchitecture.UnitTests.Infrastructure.Services

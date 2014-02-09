@@ -24,15 +24,17 @@ namespace OnionArchitecture.UI.Web.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Create()
         {
             return View();
         }
 
+        [HttpPost]
         public ActionResult Create(ToDo toDo)
         {
             _toDoWriter.Save(toDo);
-            return View();
+            return RedirectToAction("Index");
         }
     }
 }

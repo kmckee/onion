@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\Interfaces\IToDoRepository.cs" />
-    <Compile Include="Database\Models\ToDoDto.cs" />
+    <Compile Include="Database\Dtos\ToDoDto.cs" />
     <Compile Include="Database\Repositories\ToDoRepository.cs" />
     <Compile Include="Database\Services\ToDoWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

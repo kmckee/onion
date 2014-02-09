@@ -51,5 +51,13 @@ namespace OnionArchitecture.UnitTests.Web.Controllers
 
             _toDoWriter.Received().Save(newToDo);
         }
+
+        [Test]
+        public void Create_post_redirects_to_index()
+        {
+            var result = _controller.Create(new ToDo() {Created = DateTime.Now, Description = "Foo"});
+            result.Should().BeOfType<RedirectToRouteResult>();
+            (result as RedirectToRouteResult).RouteValues.Should().Contain("Action", "Index");
+        }
     }
 }

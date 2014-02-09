@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OnionArchitecture.Infrastructure.Database.Dtos;
 using OnionArchitecture.Infrastructure.Database.Interfaces;
-using OnionArchitecture.Infrastructure.Database.Models;
 
 namespace OnionArchitecture.Infrastructure.Database.Repositories
 {
@@ -12,7 +13,7 @@ namespace OnionArchitecture.Infrastructure.Database.Repositories
     {
         public void Save(ToDoDto toDo)
         {
-            throw new NotImplementedException();
+            Debug.WriteLine(toDo.ToString());
         }
     }
 }

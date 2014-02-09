@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OnionArchitecture.Infrastructure.Database.Models
+namespace OnionArchitecture.Infrastructure.Database.Dtos
 {
     public class ToDoDto
     {

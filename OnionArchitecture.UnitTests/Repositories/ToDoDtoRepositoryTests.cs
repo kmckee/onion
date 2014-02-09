@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
 using NSubstitute;
 using NUnit.Framework;
 using OnionArchitecture.Infrastructure.Database;
 using OnionArchitecture.Infrastructure.Database.Dtos;
 using OnionArchitecture.Infrastructure.Database.Repositories;
 
-namespace OnionArchitecture.UnitTests.Infrastructure.Repositories
+namespace OnionArchitecture.UnitTests.Repositories
 {
     [TestFixture]
     public class ToDoDtoRepositoryTests

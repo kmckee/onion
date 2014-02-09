@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Ninject;
 using Ninject.Modules;
 using OnionArchitecture.Core.Interfaces;
+using OnionArchitecture.Core.Services;
 using OnionArchitecture.Infrastructure;
 using OnionArchitecture.Infrastructure.Database;
 using OnionArchitecture.Infrastructure.Database.Interfaces;
@@ -21,6 +22,7 @@ namespace OnionArchitecture.IOC
         // forces us to use abstractions defined in the Core assembly.
         public override void Load()
         {
+            Bind<IToDoCompleter>().To<ToDoCompleter>();
             Bind<IToDoWriter>().To<ToDoWriter>();
             Bind<IToDoDtoRepository>().To<ToDoDtoRepository>();
             Bind<EfDbContext>().ToSelf();

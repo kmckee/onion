@@ -59,11 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\Repositories\FakeDbSet.cs" />
-    <Compile Include="Infrastructure\Repositories\ToDoDtoRepositoryTests.cs" />
-    <Compile Include="Infrastructure\Services\ToDoWriterTests.cs" />
+    <Compile Include="Repositories\FakeDbSet.cs" />
+    <Compile Include="Repositories\ToDoDtoRepositoryTests.cs" />
+    <Compile Include="Services\ToDoCompleterServiceTests.cs" />
+    <Compile Include="Services\ToDoWriterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Web\Controllers\HomeControllerTests.cs" />
+    <Compile Include="Controllers\HomeControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

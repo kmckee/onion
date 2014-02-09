@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Mvc;
+using FluentAssertions;
 using NSubstitute;
 using NUnit.Framework;
 using OnionArchitecture.Core.Interfaces;
 using OnionArchitecture.Core.Models;
 using OnionArchitecture.UI.Web.Controllers;
-using FluentAssertions;
 
-namespace OnionArchitecture.UnitTests.Web.Controllers
+namespace OnionArchitecture.UnitTests.Controllers
 {
     [TestFixture]
     public class HomeControllerTests

@@ -10,5 +10,6 @@ namespace OnionArchitecture.Core.Models
         public long Id { get; set; }
         public string Description { get; set; }
         public DateTime Created { get; set; }
+        public bool IsComplete { get; set; }
     }
 }

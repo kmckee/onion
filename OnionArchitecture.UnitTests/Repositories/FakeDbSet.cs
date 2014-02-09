@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace OnionArchitecture.UnitTests.Infrastructure.Repositories
+namespace OnionArchitecture.UnitTests.Repositories
 {
     public class FakeDbSet<T> : IDbSet<T>
         where T : class

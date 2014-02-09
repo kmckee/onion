@@ -184,3 +184,6 @@ Desktop.ini
 $RECYCLE.BIN/
 OnionArchitecture.v11.suo
 *.suo
+*/obj/*
+*/App_Data/*
+*.csproj.user

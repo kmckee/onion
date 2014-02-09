@@ -6,6 +6,8 @@ using OnionArchitecture.Infrastructure.Database.Interfaces;
 
 namespace OnionArchitecture.Infrastructure.Database.Services
 {
+    // Services that deal with DTOs directly need to live in the infrastructure assembly.
+    // The interface, however, is defined in the Core assembly.
     public class ToDoWriter : IToDoWriter
     {
         private readonly IToDoRepository _toDoRepository;

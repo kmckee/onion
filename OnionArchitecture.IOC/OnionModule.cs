@@ -16,6 +16,9 @@ namespace OnionArchitecture.IOC
 {
     public class OnionModule : NinjectModule
     {
+        // This assembly allows me to bind interfaces in the core assembly to implementation in the Infrastructure assembly
+        // without having to add a reference to Infrastructure from UI.Web.  This keeps database objects out of the UI, and 
+        // forces us to use abstractions defined in the Core assembly.
         public override void Load()
         {
             Bind<IToDoWriter>().To<ToDoWriter>();
